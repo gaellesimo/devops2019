@@ -57,6 +57,7 @@
    ```sh
    kops create cluster --cloud=aws --zones=ap-south-1b --name=demo.k8s.valaxy.net --dns-zone=valaxy.net --dns private 
     ```
+kops create cluster --name=gaelle.com --state=s3://gaelle-kops --zones=us-east-1a,us-east-1b --node-count=2
 
 1. Create kubernetes cluser
     ```sh
