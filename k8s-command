@@ -1,0 +1,461 @@
+root@ip-192-168-1-180:~/k8s-cicd/jenkins# history
+    1  apt-get install vim
+    2  clear
+    3  vim /etc/ssh/sshd_config
+    4  passwd root
+    5  clear
+    6  ls
+    7  curl https://s3.amazonaws.com/aws-cli/awscli-bundle.zip -o awscli-bundle.zip
+    8  LS
+    9  ls
+   10  apt install unzip python
+   11  unzip awscli-bundle.zip
+   12  curl -LO https://storage.googleapis.com/kubernetes-release/release/$(curl -s https://storage.googleapis.com/kubernetes-release/release/stable.txt)/bin/linux/amd64/kubectl
+   13  kops
+   14  aws configure
+   15  aws iam list -users
+   16  aws iam list-users
+   17  export AWS_ACCESS_KEY_ID=$(aws configure get aws_access_key_id)
+   18  export AWS_SECRET_ACCESS_KEY=$(aws congifure get aws_secret_access_key)
+   19  export AWS_SECRET_ACCESS_KEY=srn2QFro9lQwDgZ+cenTFxXBvt66fx0BQRnaO9zg
+   20  export AWS_ACCESS_KEY_ID=AKIA6HPULE43Y76LFP52
+   21  clear
+   22  aws s3 ls
+   23  export NAME=gaellelabs.com
+   24  aws ec2 describe-availability-zones --region us-east-1
+   25  kops create cluster --zones=us-east-1a, us-east-1f --name=gaelle-kops --dns-zone=gaellelabs.com --dns public
+   26  kops create cluster --zones=us-east-1a --name=gaelle-kops --dns-zone=gaellelabs.com --dns public
+   27  kops create cluster --zones=us-east-1a --name=gaelle-kops.com --dns-zone=gaellelabs.com --dns public
+   28  clear
+   29  kops create cluster --zones us-east-1a, us-east-1f
+   30  kops create cluster --zones us-east-1a,us-east-1f
+   31  kops create cluster --zones us-east-1a,us-east-1f ${NAME}
+   32  kubectl get nodes
+   33  error determining default DNS zone: error querying zones: AccessDenied: User: arn:aws:iam::978154366775:user/kops is not authorized to perform: route53:ListHostedZones
+   34  kops create cluster --zones us-east-1a,us-east-1f ${NAME}
+   35  kops update cluster --name gaellelabs.com --yes
+   36  ls -la
+   37  cd .ssh
+   38  ls
+   39  pwd
+   40  ssh-keygen
+   41  kops create secret --name ${name} sshpublickey admin -i /root/.ssh/id_rsa
+   42  kops create secret --name ${name} sshpublickey admin -i /root/.ssh/id_rsa.pub
+   43  kops create cluster --cloud=aws --zone=us-east-1a,us-east-1 --name=gaelle-kops --dns-zone=gaellelabs.com --dns private
+   44  kops create cluster --cloud=aws --zone us-east-1a,us-east-1 --name=gaelle-kops --dns-zone=gaellelabs.com --dns private
+   45  clear
+   46  kubectl get nodes
+   47  kops edit cluster ${NAME}
+   48  kops edit ig nodes
+   49  kops edit ig nodes --name ${NAME}
+   50  kops get ig nodes --name ${NAME}
+   51  kops edit ig nodes --name ${NAME}
+   52  kops get ig nodes --name ${NAME}
+   53  kubectl get nodes
+   54  kops create cluster --cloud=aws --zone=us-east-1a --name=gaelle-kops --dns-zone=gaellelabs.com --dns private
+   55  kops update cluster
+   56  kops create cluster --cloud=aws --zone=us-east-1a --name=gaelle-kops --dns-zone=gaellelabs.com --dns private
+   57  kops update cluster
+   58  nslookup gaellelabs.com
+   59  kops create cluster --cloud=aws --zone=us-east-1a --name=gaelle-kops --dns-zone=gaellelabs.com --dns private
+   60  kops create cluster --cloud=aws --zone=us-east-1a --name=gaelle-kops --dns-zone=gaellelabs.com --dns privateclear
+   61  clear
+   62  kops get cluster
+   63  kops delete cluster --name gaellelabs.com  --yes
+   64  kops get cluster
+   65  kops delete cluster --name gaellelabs.com  --yes
+   66  clear
+   67  kops get cluster
+   68  kubectl get nodes
+   69  kops delete cluster --name gaelle-kops.com  --yes
+   70  kubectl get nodes
+   71  kops get cluster
+   72  clear
+   73  kops create cluster --cloud=aws --zone=us-east-1a --name=gaelle-cluster.net --dns-zone=gaellelabs.com --dns private
+   74  kops create cluster --cloud=aws --zone=us-east-1a --name=gaellelabs.com --dns-zone=gaellelabs.com --dns private
+   75  kops create cluster --name=gaellelabs.com --state=s3://gaelle-kops --zones=eu-west-1a --node-count=2
+   76  kubectl get cluster
+   77  clear
+   78  kops update cluster gaellelabs.com
+   79  kops update cluster gaellelabs.com --yes
+   80  kops validate cluster
+   81  kubectl get nodes --show-labels
+   82  clear
+   83  kops get cluster
+   84  kops update cluster gaellelabs.com --yes
+   85  kops rolling-update cluster
+   86  cd
+   87  kops validate cluster
+   88  clear
+   89  kops create cluster --cloud=aws --zones=us-east-1a --name=gaellelabs.com --dns-zone=gaellelabs.com --dns private
+   90  kops update cluster
+   91  kops create cluster --cloud=aws --zones=us-east-1a --name=gaellelabs.com --dns-zone=gaellelabs.com --dns public
+   92  kops update cluster
+   93  kops create cluster --cloud=aws --zones=us-east-1a --name=gaellelabs.com --dns-zone=gaellelabs.com --dns public
+   94  kops update cluster
+   95  kubectl get nodes
+   96  kubectl get services
+   97  kubectl get pods
+   98  kubectl get deployment
+   99  ping 172.20.41.94
+  100  kubectl get node
+  101  ssh 172.120.41.94
+  102  clear
+  103  kops get cluster
+  104  kopkops delete cluster --name gaellelabs.com --yes
+  105  kops delete cluster --name gaellelabs.com --yes
+  106  clear
+  107  kops create cluster --name=gaellelabs.com --state=s3://gaelle-kops --zones=us-east-1 --node-count=2
+  108  kops create cluster --cloud=aws --name=gaellelabs.com --state=s3://gaelle-kops --zones=us-east-1 --node-count=2
+  109  kops create cluster --cloud=aws --name=gaellelabs.com --state=s3://gaelle-kops --zones=us-east-1a --node-count=2
+  110  kops update cluster --name gaellelabs.com --yes
+  111  kubectl get nodes
+  112  kops get cluster
+  113  kops update cluster --name gaellelabs.com --yes
+  114  kubectl get nodes
+  115  clear
+  116  ssh -i ~/.ssh/id_rsa root@3.94.180.82
+  117  ssh -i ~/.ssh/id_rsa admin@3.94.180.82
+  118  kops validate cluster
+  119  kubectl get nodes
+  120  korp create secret --name {NAME} sshpublickey admin -i ~/.ssh/id_rsa.pub
+  121  kops create secret --name {NAME} sshpublickey admin -i ~/.ssh/id_rsa.pub
+  122  clear
+  123  export NAME=gaellelabs.com
+  124  kops create secret --name {NAME} sshpublickey admin -i ~/.ssh/id_rsa.pub
+  125  kops create secret --name ${NAME} sshpublickey admin -i ~/.ssh/id_rsa.pub
+  126  clear
+  127  kops edit cluster ${name}
+  128  kops edit ig nodes
+  129  kops get is --name ${name}
+  130  kops get ig --name ${name}
+  131  clear
+  132  kops get ig --name ${name}
+  133  kops update cluster gaellelabs.com --yes
+  134  kops rolling-update cluster
+  135  ls
+  136  mkdir gaga
+  137  cd gaga
+  138  vim storage-aws.yml
+  139  kubectl apply -f storage-aws.yml
+  140  vim storage-aws.yml
+  141  kubectl apply -f storage-aws.yml
+  142  clear
+  143  kubectl get pvc
+  144  vim monge-stack.yml
+  145  kubectl apply -f monge-stack.yml
+  146  kubectl get all
+  147  clear
+  148  kubectl get all
+  149  kubectl get all
+  150  kubectl log -f pod/mongodb-7dc4596644-qtqzb
+  151  kubectl log -f pod mongodb-7dc4596644-qtqzb
+  152  kubectl logs -f pod/mongodb-7dc4596644-qtqzb
+  153  clear
+  154  vim workload.yml
+  155  vim services.yml
+  156  kubectl apply -f .
+  157  kubectl get all
+  158  kubectl logs -f pod/position-tracker-65cff5b766-nxhsl
+  159  clear
+  160  kubectl logs -f pod/position-tracker-65cff5b766-nxhsl
+  161  clear
+  162  kubectl get all
+  163  docker ps
+  164  docker images
+  165  kubectl get all
+  166  kubectl get pods
+  167  kubectl get pods -o wide
+  168  kubectl get nodes
+  169  kubectl get all
+  170  clear
+  171  kubectl get nodes
+  172  ls
+  173  vim monge-stack.yml
+  174  vim services.yml
+  175  vim storage-aws.yml
+  176  vim workload.yml
+  177  ls
+  178  pwd
+  179  kops get cluster
+  180  kops delete cluster --name gaellelabs.com
+  181  kops delete cluster --name gaellelabs.com --yes
+  182  ls
+  183  cd ..
+  184  cd
+  185  ls
+  186  clear
+  187  ls
+  188  cd gaga/
+  189  ls
+  190  clear
+  191  kops create cluster --zones us-east-1a, us-east-1f gaellelabs.com
+  192  kops create cluster --zones us-east-1a, us-east-1f {NAME}
+  193  clear
+  194  kops create cluster --name=gaelle --state=s3://gaelle-kops --zones=us-east-1a, us-east-1f --nodes-count=2
+  195  kops get nodes
+  196  kops create cluster --name=gaellelabs.com --state=s3://gaelle-kops --zones=us-east-1a, us-east-1f --nodes-count=2
+  197  kops create cluster --name=gaellelabs.com --state=s3://gaelle-kops --zones=us-east-1a, us-east-1f --node-count=2
+  198  kops create cluster --name=gaellelabs.com --state=s3://gaelle-kops --zones=us-east-1a,us-east-1f --node-count=2
+  199  kops edit cluster gaellelabs.com
+  200  kops edit ig --name=gaellelabs.com nodes
+  201  clear
+  202  kops get nodes
+  203  kops update cluster gaellelabs.com --yes
+  204  export KOPS_STATE_STORE=s3://gaelle-kops
+  205  kops update cluster gaellelabs.com --yes
+  206  kops validate cluster
+  207  kops update cluster gaellelabs.com --yes
+  208  kops rolling-update cluster
+  209  kops get cluster
+  210  kops update cluster gaellelabs.com --yes
+  211  kubectl get nodes
+  212  kops get nodes
+  213  kops rolling-update gaellelabs.com
+  214  export KOPS_STATE_STORE=s3://gaelle-kops
+  215  kubectl get nodes
+  216  kubectl get nodes -o wide
+  217  clear
+  218  ls
+  219  kubectl apply -f monge-stack.yml
+  220  kubectl apply -f services.yml
+  221  kubectl apply -f storage-aws.yml
+  222  kubectl apply -f workload.yml
+  223  clear
+  224  kubectl get all
+  225  kubectl get pods -o wide
+  226  kubectl get pods
+  227  kubectl logs position-simulator-58d495886c-f478h
+  228  clear
+  229  vim fluentd.yml
+  230  vim elastic-stack.yml
+  231  kubectl apply -f elastic-stack.yml
+  232  kubectl apply -f fluentd.yml
+  233  clear
+  234  kubectl get all
+  235  clear
+  236  kubectl get pods -n kube-system
+  237  clear
+  238  kubectl get svc
+  239  kubectl get svc -n kube-system
+  240  kubectl describr svc kibana-logging -n kube-system
+  241  kubectl describe svc kibana-logging -n kube-system
+  242  kubectl get svc -n kube-system
+  243  kubectl describe svc elasticsearch-logging  -n kube-system
+  244  kubectl get svc
+  245  kubectl describe svc fleetman-webapp
+  246  kubectl get namespace
+  247  adff6f7899b6a43ba99bddaa34333a1e-1547642592.us-east-1.elb.amazonaws.com
+  248  ls
+  249  vim workload.yml
+  250  clear
+  251  kubectl apply -f workload.yml
+  252  vim workload.yml
+  253  kubectl apply -f workload.yml
+  254  vim workload.yml
+  255  ls
+  256  vi storage-aws.yml
+  257  kubectl delete -f .
+  258  ls
+  259  clear
+  260  kubectl get nodes
+  261  kubectl describe nodes ip-172-20-48-49.ec2.internal
+  262  ls
+  263  vim storage-aws.yml
+  264  vim workload.yml
+  265  vim ressource-testing.yml
+  266  kubectl apply -f ressource-testing.yml
+  267  kubectl get all
+  268  kubectl describe pods queue-65dc8db8f6-8pm74
+  269  kubectl get pods -o wide
+  270  kubectl get nodes
+  271  kubectl describe nodes ip-172-20-76-62.ec2.internal
+  272  vim ressource-testing.yml
+  273  kubectl apply -f ressource-testing.yml
+  274  vim get all
+  275  kubectl get all
+  276  kubectl describe nodes ip-172-20-76-62.ec2.internal
+  277  kubectl get all
+  278  kubectl get nodes
+  279  kubectl describe nodes ip-172-20-48-49.ec2.internal
+  280  kubectl get cluster
+  281  clear
+  282  ls
+  283  vim ressource-testing.yml
+  284  kubectl apply -f ressource-testing.yml
+  285  kubectl get all
+  286  kubectl get pods -o wide
+  287  kubectl describe nodes ip-172-20-48-49.ec2.internal
+  288  vim ressource-testing.yml
+  289  kubectl apply -f ressource-testing.yml
+  290  kubectl get all
+  291  kubectl describe nodes ip-172-20-48-49.ec2.internal
+  292  vim ressource-testing.yml
+  293  kubectl apply -f ressource-testing.yml
+  294  kubectl describe nodes ip-172-20-48-49.ec2.internal
+  295  kubectl get all
+  296  vim ressource-testing.yml
+  297  kubectl apply -f ressource-testing.yml
+  298  kubectl get all
+  299  vim ressource-testing.yml
+  300  kubectl get all
+  301  kubectl get pods
+  302  kubectl describe pods queue-58b8874d6-zfzk7
+  303  kubectl top pods
+  304  kubectl top pod
+  305  clear
+  306  kubectl get nodes
+  307  ip-172-20-48-49.ec2.internal addons list
+  308  gaellelabs.com addons list
+  309  kubectl addons list
+  310  kubectl --help
+  311  kubectl top pod
+  312  kubectl delete cluster --name gaellelabs.com --yes
+  313  kubectl delete cluster --name=gaellelabs.com --yes
+  314  kops delete cluster --name=gaellelabs.com --yes
+  315  ls
+  316  clear
+  317  cd gaga/
+  318  ls
+  319  kops create cluster --name=gaellelabs.com --state=s3://gaelle-kops --zones=us-east-1a, us-east-1f --node-count=2
+  320  kops create cluster --name=gaellelabs.com --state=s3://gaelle-kops --zones=us-east-1a us-east-1f --node-count=2
+  321  kops create cluster --name=gaellelabs.com --state=s3://gaelle-kops --zones=us-east-1a,us-east-1f --node-count=2
+  322  kops
+  323  kops get cluster
+  324  kubectl get nodes
+  325  history
+  326  $NAME
+  327  $(NAME)
+  328  echo $(NAME)
+  329  export NAME=gaellelabs.com
+  330  kubectl get nodes
+  331  kops get cluster
+  332  kops update cluster gaellelabs.com --yes
+  333  kubectl get nodes --show-labels
+  334  kubectl get nodes
+  335  ls
+  336  kubectl apply -f monge-stack.yml
+  337  kubectl apply -f services.yml
+  338  kubectl apply -f storage-aws.yml
+  339  kubectl apply -f workload.yml
+  340  kubectl get all
+  341  vim workload.yml
+  342  kubectl apply -f workload.yml
+  343  vim workload.yml
+  344  kubectl apply -f workload.yml
+  345  kubectl get all
+  346  vim workload.yml
+  347  ls
+  348  vim services.yml
+  349  kubectl apply -f workload.yml
+  350  kubectl get all
+  351  vim services.yml
+  352  kubectl apply -f workload.yml
+  353  vim services.yml
+  354  kubectl get all
+  355  ls
+  356  vim storage-aws.yml
+  357  vim monge-stack.yml
+  358  vim workload.yml
+  359  vim services.yml
+  360  kubectl apply -f ser
+  361  kubectl apply -f services.yml
+  362  vim services.yml
+  363  kubectl apply -f services.yml
+  364  kubectl get all
+  365  vim services.yml
+  366  kubectl apply -f services.yml
+  367  kubectl
+  368  clear
+  369  kubectl addons list
+  370  kubectl addons top nodes
+  371  kubectl top nodes
+  372  top
+  373  kubectl top pod
+  374  top
+  375  clear
+  376  docker run --rm k8s.gcr.io/metrics-server:v0.3.6 --help
+  377  yum install docker -y
+  378  apt install yum
+  379  yum install docker -y
+  380  docker
+  381  kubectl get apiservices
+  382  clear
+  383  kubectl get pods
+  384  kubectl get namespace
+  385  kubectl describe pods api-gateway-6bc88d75b4-kfcr7
+  386  clear
+  387  kubectl top pod api-gateway-6bc88d75b4-kfcr7 --namespace=default
+  388  kubectl get services http:heapster:
+  389  clear
+  390  kubectl create namespace cpu-gaelle
+  391  kubectl apply -f https://k8s.io/examples/pods/resource/cpu-request-limit.yaml --namespace=cpu-gaelle
+  392  pods/resource/cpu-request-limit.yaml
+  393  apiVersion: v1
+  394  kind: Pod
+  395  metadata:
+  396  spec:
+  397  clear
+  398  vim cpu-request-limit.yaml
+  399  kubectl create namespace cpu-example
+  400  kubectl apply -f https://k8s.io/examples/pods/resource/cpu-request-limit.yaml --namespace=cpu-example
+  401  kubectl get pod cpu-demo --namespace=cpu-example
+  402  kubectl get cluster
+  403  kops get cluster
+  404  clear
+  405  kubectl get pod cpu-demo --namespace=cpu-example
+  406  kubectl get pod cpu-demo --output=yaml --namespace=cpu-example
+  407  history
+  408  kubectl top pods
+  409  clear
+  410  kubectl get pod cpu-demo --output=yaml --namespace=cpu-example
+  411  kubectl delete pod cpu-demo --namespace=cpu-example
+  412  kubectl delete namespace cpu-example
+  413  clear
+  414  kubectl apply -f https://k8s.io/examples/pods/resource/cpu-request-limit.yaml --namespace=default
+  415  ls
+  416  yum install aide
+  417  vim ressource-testing.yml
+  418  vim services.yml
+  419  vim workload.yml
+  420  kubectl apply -f https://k8s.io/examples/pods/workload.yaml --namespace=default
+  421  kops delete cluster gaellelabs.com --yes
+  422  ls
+  423  clear
+  424  yum install git
+  425  yum repolist all
+  426  git branch
+  427  docker
+  428  apt install docker.io
+  429  apt install git
+  430  git
+  431  clear
+  432  mkdir k8s-cicd
+  433  cd k8s-cicd
+  434  git clone https://github.com/gaelle100/jenkins.git
+  435  ls
+  436  docker images
+  437  clear
+  438  ls
+  439  cd jenkins/
+  440  docker image build -t myjenkins .
+  441  clear
+  442  kops create cluster --name=gaellelabs.com --state=s3://gaelle-kops --zoneus-east-1a --node-count=2
+  443  kops create cluster --name=gaellelabs.com --state=s3://gaelle-kops --zones=us-east-1a,us-east-1f --node-count=2
+  444  kops update cluster --name gaellelabs.com --yes
+  445  kops update validate cluster gaellelabs.com
+  446  kops update validate gaellelabs.com
+  447  kops validate cluster gaellelabs.com
+  448  kops validate cluster
+  449  kops update cluster --name gaellelabs.com --yes
+  450  export KOPS_STATE_STORE=s3://gaelle-kops
+  451  kops update cluster gaellelabs.com --yes
+  452  kops get cluster
+  453  kubectl get pods
+  454  clear
+  455  ls
+  456  kubectl apply -f jenkins.yaml
+  457  kubectl get all
+  458  kubectl describe pods jenkins-9f877b65c-4nqfz
+  459  kubectl get all
+ 
