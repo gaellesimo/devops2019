@@ -458,4 +458,4 @@ root@ip-192-168-1-180:~/k8s-cicd/jenkins# history
   457  kubectl get all
   458  kubectl describe pods jenkins-9f877b65c-4nqfz
   459  kubectl get all
- 
+  460  kops create secret --name {NAME} sshpublickey admin -i ~/.ssh/id_rsa.pub
