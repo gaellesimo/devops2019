@@ -2,6 +2,7 @@ https://hub.docker.com/_/jenkins
 docker pull jenkins
 docker run -p 8080:8080 -p 50000:50000 jenkins
 docker run --name myjenkins -p 8080:8080 -p 50000:50000 -v /var/jenkins_home jenkins
+docker run -p 8080:8080 -p 50000:50000 -v docker-volume:/var/jenkins_home jenkins
 
 executors.groovy
 
@@ -12,3 +13,10 @@ Dockerfile
 
 FROM jenkins
 COPY executors.groovy /usr/share/jenkins/ref/init.groovy.d/executors.groovy
+
+
+####
+docker volume create gagavol
+docker volume ls
+docker volume inspect
+docker inspect <container-name>
