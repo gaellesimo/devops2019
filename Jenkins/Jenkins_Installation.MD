@@ -55,6 +55,9 @@ Minimum hardware requirements:
 
    # Setup Jenkins to start at boot,
    chkconfig jenkins on
+   
+   #check the jenkins version
+   rpm -qa | grep jenkins
    ```
 
    ### Accessing Jenkins
