@@ -3,6 +3,9 @@ Jenkins is a self-contained Java-based program, ready to run out-of-the-box, wit
 
 
 ### Prerequisites
+Minimum hardware requirements:
+256 MB of RAM
+1 GB of drive space (although 10 GB is a recommended minimum if running Jenkins as a Docker container)
 1. EC2 Instance 
    - With Internet Access
    - Security Group with Port `8080` open for internet
