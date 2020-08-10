@@ -15,8 +15,22 @@ FROM jenkins
 COPY executors.groovy /usr/share/jenkins/ref/init.groovy.d/executors.groovy
 
 
-####
+#### docker volume ########
 docker volume create gagavol
 docker volume ls
 docker volume inspect
 docker inspect <container-name>
+
+
+### Jenkins container with docker###
+expose docker API default port 3375 to another port
+docker run -p 3375:2375 -v /var/run/docker.sock:/var/run/docker.sock -d shipyard/docker-proxy
+##identify docker host container from within the container
+
+docker version , this command gives you the api
+
+
+remove old docker-version
+sudo apt-get remove docker docker-engine docker.io
+
+sudo apt install docker.io
