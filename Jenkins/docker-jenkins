@@ -34,3 +34,8 @@ remove old docker-version
 sudo apt-get remove docker docker-engine docker.io
 
 sudo apt install docker.io
+
+
+
+##command on jenkins-
+docker rmi file2:1.0; docker build -t file2:1.0 .; docker tag file2:1.0 gaellesimo/file2:1.0; docker push gaellesimo/file2:1.0
