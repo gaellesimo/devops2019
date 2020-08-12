@@ -86,3 +86,8 @@ Minimum hardware requirements:
 1. Build job
 1. Check "console output"
 
+########changing jenkins home directory ##########3333
+sudo service jenkins stop
+sudo mv /var/lib/jenkins /home
+sudo ln -s /home/jenkins /var/lib/jenkins
+sudo service jenkins start
