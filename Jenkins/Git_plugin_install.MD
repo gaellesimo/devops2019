@@ -18,3 +18,11 @@ Git is one of the most popular tools for version control system. you can pull co
 - Configure git path
   - `Manage Jenkins` > `Global Tool Configuration` > `git`
 
+########33creating a repo in git ############3
+or create a new repository on the command line
+echo "# new-new" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git remote add origin https://github.com/gaellesimo/new-new.git
+git push -u origin master
