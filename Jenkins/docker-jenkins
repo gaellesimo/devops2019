@@ -40,6 +40,13 @@ sudo apt install docker.io
 ##command on jenkins-
 docker rmi file2:1.0; docker build -t file2:1.0 .; docker tag file2:1.0 gaellesimo/file2:1.0; docker push gaellesimo/file2:1.0
 
+#########Simple Dockerfile#############
+FROM tomcat:8
+
+MAINTAINER GAELLE SIMO
+
+COPY webapps.war /usr/local/tomcat/webapps
+
 
 http://3.231.217.51:8080/env-vars.html/
 ########################/about
