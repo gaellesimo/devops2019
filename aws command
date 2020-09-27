@@ -1,1 +1,9 @@
 aws ec2 run-instances --instance-type t2.micro --image-id ami-8303837736 --count 19
+
+
+
+install cloudwatch agent
+sudo yum install amazon-cloudwatch-agent
+wget https://s3.amazonaws.com/amazoncloudwatch-agent/amazon_linux/amd64/latest/amazon-cloudwatch-agent.rpm
+sudo rpm -U ./amazon-cloudwatch-agent.rpm
+sudo /opt/aws/amazon-cloudwatch-agent/bin/amazon-cloudwatch-agent-config-wizard
