@@ -1,0 +1,1 @@
+aws ec2 run-instances --instance-type t2.micro --image-id ami-8303837736 --count 19
