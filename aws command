@@ -11,3 +11,7 @@ sudo /opt/aws/amazon-cloudwatch-agent/bin/amazon-cloudwatch-agent-ctl -a fetch-c
 
 mkdir -p /usr/share/collectd
 touch /usr/share/collectd/types.db
+
+aws ssm get-parameters --names <parameters name> <parameter name> --with-decryption
+aws ssm get-parameters-by-path --path /my-app/dev/  will give you all path
+aws ssm get-parameters-by-path --path /my-app/dev/ --recursive
