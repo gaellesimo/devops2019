@@ -15,3 +15,14 @@ touch /usr/share/collectd/types.db
 aws ssm get-parameters --names <parameters name> <parameter name> --with-decryption
 aws ssm get-parameters-by-path --path /my-app/dev/  will give you all path
 aws ssm get-parameters-by-path --path /my-app/dev/ --recursive
+
+
+lsblk
+sudo file -s /dev/sdba
+data means no file system on the device create one
+sudo mkfs -t xfs /dev/xvdf
+sudo yum install xfsprogs and repeat above command
+sudo mount /dev/xvdf /data
+
+To mount an attached volume automatically after reboot
+sudo cp /etc/fstab /etc/fstab.orig       to create a backup of the fstab
