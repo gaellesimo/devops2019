@@ -26,3 +26,10 @@ sudo mount /dev/xvdf /data
 
 To mount an attached volume automatically after reboot
 sudo cp /etc/fstab /etc/fstab.orig       to create a backup of the fstab
+
+
+configure a presign URL
+aws configure 
+aws s3 presign help
+aws configure set s3 default.s3.signature_version s3v4
+aws s3 presign s3://gaelle-bucket/ariane.docx --expires-in 300 --region us-east-1
